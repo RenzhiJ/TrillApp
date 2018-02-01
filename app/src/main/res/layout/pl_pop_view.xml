@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="评论" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/xiaoaite"
+        android:hint="有爱评论，说点好听的~" />
+</LinearLayout>
