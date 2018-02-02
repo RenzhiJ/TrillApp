@@ -1,4 +1,4 @@
-package com.example.ss.android.common.applog;
+package com.example.applog;
 
 import android.content.Context;
 

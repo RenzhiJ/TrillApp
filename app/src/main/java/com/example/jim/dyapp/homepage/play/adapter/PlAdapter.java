@@ -1,4 +1,4 @@
-package com.example.jim.dyapp.homepage.play;
+package com.example.jim.dyapp.homepage.play.adapter;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.example.jim.dyapp.R;
 import com.example.jim.dyapp.appnet.bean.CommentBean;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.jaren.lib.view.LikeView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -69,13 +70,15 @@ public class PlAdapter extends RecyclerView.Adapter<PlAdapter.ViewHolder> {
         private final SimpleDraweeView plImg;
         private final TextView plName;
         private final TextView plTime;
-
+        private LikeView lv;
         public ViewHolder(View view) {
             super(view);
             plImg = view.findViewById(R.id.pl_img);
             mTextView = view.findViewById(R.id.tv_pl_content);
             plName = view.findViewById(R.id.tv_pl_user);
             plTime = view.findViewById(R.id.tv_pl_time);
+            lv = view.findViewById(R.id.lv);
+
 
         }
     }

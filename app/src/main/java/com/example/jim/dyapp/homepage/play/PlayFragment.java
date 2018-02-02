@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import com.example.jim.dyapp.R;
 import com.example.jim.dyapp.appnet.bean.CategoryBean;
 import com.example.jim.dyapp.appnet.bean.CommentBean;
+import com.example.jim.dyapp.homepage.play.adapter.MyVpAdapter;
+import com.example.jim.dyapp.homepage.play.presenter.SyPresenter;
+import com.example.jim.dyapp.homepage.play.view.SyViewAPI;
 
 import java.util.ArrayList;
 import java.util.List;

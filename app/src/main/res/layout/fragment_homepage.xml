@@ -26,6 +26,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:textColor="#FFF"
             android:id="@+id/tv_recomment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
             android:textSize="20dp" />
 
         <TextView
+            android:textColor="#FFF"
             android:id="@+id/tv_nearby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

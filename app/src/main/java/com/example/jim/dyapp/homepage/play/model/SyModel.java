@@ -1,9 +1,11 @@
-package com.example.jim.dyapp.homepage.play;
+package com.example.jim.dyapp.homepage.play.model;
 
 
 import com.example.jim.dyapp.appnet.bean.CategoryBean;
 import com.example.jim.dyapp.appnet.bean.CommentBean;
 import com.example.jim.dyapp.appnet.utils.RetrofitUtils;
+import com.example.jim.dyapp.homepage.play.view.SyCommentAPI;
+import com.example.jim.dyapp.homepage.play.presenter.SyPresenterAPI;
 
 import retrofit2.Call;
 import retrofit2.Callback;

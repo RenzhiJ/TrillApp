@@ -1,4 +1,4 @@
-package com.example.jim.dyapp.homepage.play;
+package com.example.jim.dyapp.homepage.play.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,11 +14,13 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.jim.dyapp.R;
 import com.example.jim.dyapp.appnet.bean.CategoryBean;
 import com.example.jim.dyapp.appnet.bean.CommentBean;
+import com.jaren.lib.view.LikeView;
 
 import java.util.List;
 
@@ -30,7 +32,8 @@ public class MyVpAdapter extends PagerAdapter implements View.OnClickListener {
     private List<CategoryBean.CategoryListBean.AwemeListBean> list;
     private CommentBean commentBean;
     private PopupWindow mPopWindow;
-    private ImageView like;
+    private LikeView lv;
+
 
     public MyVpAdapter(Context context, List<CategoryBean.CategoryListBean.AwemeListBean> list, CommentBean commentBean) {
         this.context = context;
@@ -51,11 +54,11 @@ public class MyVpAdapter extends PagerAdapter implements View.OnClickListener {
     @Override
     public Object instantiateItem(ViewGroup container, final int position) {
         View view = View.inflate(context, R.layout.vp_layout, null);
-        like = view.findViewById(R.id.img_like);
+        lv = view.findViewById(R.id.lv);
         //pop
         ImageView img_pl = view.findViewById(R.id.img_pinglun);
         img_pl.setOnClickListener(this);
-        like.setOnClickListener(this);
+        lv.setOnClickListener(this);
         final JCVideoPlayerStandard videoplayer = view.findViewById(R.id.videoplayer);
         WebView webView = new WebView(context);
         webView.loadUrl(list.get(position % list.size()).getVideo().getDownload_addr().getUrl_list().get(0));
@@ -123,9 +126,8 @@ public class MyVpAdapter extends PagerAdapter implements View.OnClickListener {
             case R.id.img_pinglun:
                 showPopupWindow();
                 break;
-            case R.id.img_like:
-                like.setImageResource(R.mipmap.hongxin);
-//                Toast.makeText(context, "点赞了", Toast.LENGTH_SHORT).show();
+            case R.id.lv:
+                Toast.makeText(context, "点赞了", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

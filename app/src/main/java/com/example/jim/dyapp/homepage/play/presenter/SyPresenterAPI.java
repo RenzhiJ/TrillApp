@@ -1,4 +1,4 @@
-package com.example.jim.dyapp.homepage.play;
+package com.example.jim.dyapp.homepage.play.presenter;
 
 
 import com.example.jim.dyapp.appnet.bean.CategoryBean;

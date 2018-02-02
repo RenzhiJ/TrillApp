@@ -1,4 +1,4 @@
-package com.example.ss.android.common.applog;
+package com.example.applog;
 
 /**
  * 抖音，火山so对应的native类

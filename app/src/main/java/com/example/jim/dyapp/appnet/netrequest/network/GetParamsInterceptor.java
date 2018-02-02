@@ -2,10 +2,9 @@ package com.example.jim.dyapp.appnet.netrequest.network;
 
 import android.content.Context;
 
-
+import com.example.applog.GlobalContext;
+import com.example.applog.UserInfo;
 import com.example.jim.dyapp.appnet.netrequest.utils.Utils;
-import com.example.ss.android.common.applog.GlobalContext;
-import com.example.ss.android.common.applog.UserInfo;
 
 import java.io.IOException;
 import java.util.HashMap;

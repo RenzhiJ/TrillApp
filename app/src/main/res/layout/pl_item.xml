@@ -43,9 +43,12 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@mipmap/greyxin" />
-
+    <com.jaren.lib.view.LikeView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cirRadius="20dp"
+        app:cycleTime="1600"
+        app:defaultColor="#c7c5c5" />
 </LinearLayout>

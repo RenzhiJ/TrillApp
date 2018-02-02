@@ -3,8 +3,8 @@ package com.example.jim.dyapp.appnet;
 import android.app.Application;
 import android.util.Log;
 
-import com.example.ss.android.common.applog.GlobalContext;
-import com.example.ss.android.common.applog.UserInfo;
+import com.example.applog.GlobalContext;
+import com.example.applog.UserInfo;
 import com.facebook.drawee.backends.pipeline.Fresco;
 
 

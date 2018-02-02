@@ -93,4 +93,5 @@ dependencies {
     //视频播放
     compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
 
+    compile project(path: ':lib')
 }

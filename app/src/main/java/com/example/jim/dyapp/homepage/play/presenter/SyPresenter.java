@@ -1,9 +1,12 @@
-package com.example.jim.dyapp.homepage.play;
+package com.example.jim.dyapp.homepage.play.presenter;
 
 import android.content.Context;
 
 import com.example.jim.dyapp.appnet.bean.CategoryBean;
 import com.example.jim.dyapp.appnet.bean.CommentBean;
+import com.example.jim.dyapp.homepage.play.view.SyCommentAPI;
+import com.example.jim.dyapp.homepage.play.model.SyModel;
+import com.example.jim.dyapp.homepage.play.view.SyViewAPI;
 
 
 public class SyPresenter {

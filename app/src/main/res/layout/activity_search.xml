@@ -6,9 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.jim.dyapp.homepage.search.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_hui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/gb"/>
+        <EditText
+            android:id="@+id/et_shou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <TextView
-        android:text="这是搜索界面"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_marginTop="7dp"
+        android:id="@+id/mXRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
 </LinearLayout>
